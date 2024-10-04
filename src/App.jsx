@@ -39,3 +39,20 @@ const App = () => {
 }
 
 export default App
+
+
+/** TODO:
+ * 
+ *  --> Remove the modal instead redirect the user to 
+ *      another page where the full-sized image is loaded.
+ *  --> Replace the Refresh Icon with a Back Icon
+ *  
+ *  --> Make Ajax call every 20 seconds
+ *  --> Make Ajax call immediately when the page is focused or returned to.
+ * 
+ *  --> Trigger a refresh by sliding down the first picture.
+ *  --> Fetch new pictures and append them to the existing ones.
+ *  --> Show a loading indicator while fetching
+ *  --> Ensure that there is no full page reload, just update to the current gallery.
+ * 
+ */
