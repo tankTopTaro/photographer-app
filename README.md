@@ -16,7 +16,7 @@
 
 - [ ] __Database :__ Use MySQL.
 - [ ] __Backend Language :__ PHP (with a framework of your choice).
-- [ ] __Design :__ The web app should look 100% like the provided template. Use the template as the starting point and adapt it for the app's purposes.
+- [x] __Design :__ The web app should look 100% like the provided template. Use the template as the starting point and adapt it for the app's purposes.
 - [ ] __Server Requirements :__
   - [ ] Must be able to run MySQL.
   - [ ] Must be able to send emails.
@@ -93,4 +93,9 @@
   - Id
   - Album_id
   - Date_add
+
+
+---
+
+## Deployed Frontend : [Netlify Deploy](https://willowy-valkyrie-b2a3af.netlify.app/)
     
