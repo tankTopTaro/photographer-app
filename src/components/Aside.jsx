@@ -10,8 +10,7 @@ const Aside = ({handleModalShow}) => {
         <aside className="probootstrap-aside js-probootstrap-aside">
             <a href="#" className="probootstrap-close-menu js-probootstrap-close-menu d-md-none"><span className="oi oi-arrow-left"></span> Close</a>
             <div className="probootstrap-site-logo probootstrap-animate" data-animate-effect="fadeInLeft">
-                
-                <a href="index.html" className="mb-2 d-block probootstrap-logo">Photographer</a>
+                <a className="mb-2 d-block probootstrap-logo">Photo</a>
             </div>
             <div className="probootstrap-overflow">
                 <nav className="probootstrap-nav">
