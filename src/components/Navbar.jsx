@@ -1,5 +1,4 @@
 const Navbar = () => {
-  const location = useLocation()
 
   return (
     <div className="probootstrap-bar">

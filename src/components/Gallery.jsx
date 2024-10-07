@@ -1,16 +1,14 @@
 import { useState } from "react"
 import { images } from "../constants"
-//import { useNavigate } from "react-router-dom"
+import { Modal } from "react-bootstrap"
 
 const Gallery = () => {
   const [showModal, setShowModal] = useState(false)
   const [image, setImage] = useState('')
-  //const navigate = useNavigate()
 
   const handleImage = (src) => {
     setShowModal(true)
     setImage(src)
-    //navigate('/single', { state: { imageSrc: src}})
   }
 
 
