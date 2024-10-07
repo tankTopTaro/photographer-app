@@ -11,6 +11,9 @@ const Gallery = () => {
     setImage(src)
   }
 
+  const handleClose = () => {
+    setShowModal(false)
+  }
 
   return (
     <>
