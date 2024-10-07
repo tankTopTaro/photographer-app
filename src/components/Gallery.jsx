@@ -1,19 +1,14 @@
 import { useState } from "react"
 import { images } from "../constants"
-import { Modal } from "react-bootstrap"
+import { useNavigate } from "react-router-dom"
 
 const Gallery = () => {
-  const [showModal, setShowModal] = useState(false)
-  const [image, setImage] = useState('')
+  const navigate = useNavigate()
 
   const handleImage = (src) => {
-    setShowModal(true)
-    setImage(src)
+    navigate('/single', { state: { imageSrc: src}})
   }
 
-  const handleClose = () => {
-    setShowModal(false)
-  }
 
   return (
     <>
@@ -25,7 +20,7 @@ const Gallery = () => {
         ))}
     </div>  
 
-    <Modal show={showModal} centered>
+{/*     <Modal show={showModal} centered>
         <Modal.Header>
           <div onClick={() => handleClose()} className='d-flex align-items-center pe-auto' >
             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#2e2e2e"><path d="M360-240 120-480l240-240 56 56-144 144h568v80H272l144 144-56 56Z"/></svg>
@@ -39,7 +34,7 @@ const Gallery = () => {
           <small className="mt-2">"Long click on the image and click save to camera roll"</small>
           </div>
         </Modal.Body>
-    </Modal>
+    </Modal> */}
     </>
   )
 }
