@@ -1,12 +1,12 @@
 import { useState } from "react"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Aside from "./components/Aside"
 import Footer from "./components/Footer"
 import Gallery from "./components/Gallery"
 import MailModal from "./components/MailModal"
 import Navbar from "./components/Navbar"
 import InviteModal from "./components/InviteModal"
-import Single from "./components/Single"
+/* import Single from "./components/Single"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom" */
 
 const App = () => {
   const [modalShow, setModalShow] = useState(false)
@@ -18,15 +18,12 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <>
       <Aside handleModalShow={handleShowModal}/>
 
       <main role="main" className="probootstrap-main js-probootstrap-main">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Gallery />} />
-          <Route path="/single" element={<Single />} />
-        </Routes>
+        <Gallery />
         <Footer />
       </main>
 
@@ -39,7 +36,7 @@ const App = () => {
       {modalContent === 'invite-longterm' && (
         <MailModal show={modalShow} modalContent={modalContent} onHide={() => setModalShow(false)} />
       )}
-    </Router>
+    </>
   )
 }
 
